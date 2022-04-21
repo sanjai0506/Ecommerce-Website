@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - RedStore </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;
+    400;500;600;700&display=swap" rel="stylesheet" >
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="head15">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px" ></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="account.html">Account</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon"
+                onclick="menutoggle()">
+            </div>
+        </div>
+
+    <!-- contact us -->
+    <div class="account-page1">
+    <section class="location">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d497511.1146306569!2d79.92880612495699!3d13.048043803640534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1628146944839!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    
+    <section class="contact-us">
+        <div class="row">
+        <div class="contact-col">
+            <div>
+            <i class="fa fa-home"></i>
+            <span>
+                <h5>ABC Road, EC Building</h5>
+                <p>Chennai, TamilNadu, IN</p>
+            </span>
+            </div>
+            <div>
+            <i class="fa fa-phone"></i>
+            <span>
+                <h5>+1 0123456789</h5>
+                <p>Monday to Saturday, 10AM to 6PM</p>
+            </span>
+            </div>
+            <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+                <h5>RedStore@gmail.com</h5>
+                <p>Email us your query</p>
+            </span>
+            </div>
+        </div>
+        <div class="contact-col">
+            <h2>Contact Info</h2>
+            <form action="">
+            <input type="text" placeholder="Enter your name" required>
+            <input type="email" placeholder="Enter email address" required>
+            <input type="text" placeholder="Enter your subject" required>
+            <textarea rows="8" placeholder="Message" required style="background:#fff;"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+        </div>
+    </section>
+</div>
+
+ <!-- footer -->
+ <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png">
+                    <p>Our Purpose Is To sustainably Make the Pleasure and 
+                        Benefits of sports Accessible to the Many.
+                    </p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>BLog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>YouTube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2021 - RedStore.Com</p>
+            <p class="design">Desingned By- </p>
+        </div>
+    </div>
+</div>
+
+<!-- js for toggle menu -->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px"; 
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
+</body>
+</html>
